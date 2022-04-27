@@ -282,22 +282,22 @@ if(WIN32 AND BUILD_SHARED_LIBS)
 endif()
 
 # Install tritonTargets.cmake
-install(
-    EXPORT tritonTargets
-    DESTINATION lib/cmake/triton
-    NAMESPACE triton::
-)
+#install(
+#    EXPORT tritonTargets
+#    DESTINATION lib/cmake/triton
+#    NAMESPACE triton::
+#)
 
 # Install triton
-install(
-    TARGETS triton
-    EXPORT tritonTargets
-    PUBLIC_HEADER DESTINATION include/triton
-    INCLUDES DESTINATION include
-    RUNTIME DESTINATION bin
-    ARCHIVE DESTINATION lib
-    LIBRARY DESTINATION lib
-)
+#install(
+#    TARGETS triton
+#    EXPORT tritonTargets
+#    PUBLIC_HEADER DESTINATION include/triton
+#    INCLUDES DESTINATION include
+#    RUNTIME DESTINATION bin
+#    ARCHIVE DESTINATION lib
+#    LIBRARY DESTINATION lib
+#)
 
 # Configure tritonConfig.cmake and tritonConfigVersion.cmake
 include(CMakePackageConfigHelpers)
